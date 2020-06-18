@@ -28,7 +28,7 @@
                 @Html.DropDownListFor(m => m.SelectedSubjectId, new SelectList(Model.SchoolSubjects, "Id", "Name"), "-- Select Subject --", new { id="schoolSubjectsList", required = "required"})
                 <p>Announcement is relevant to</p>
                 <input type="date" name="relevantTo" required="" />
-                <p>How much time do you need?</p>
+                <p>How much time do you need? (hours)</p>
                 <input type="number" step="0.5" name="time" required="" />
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
             </form>
